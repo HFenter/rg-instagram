@@ -1,0 +1,324 @@
+#rg_admin{
+	overflow: hidden;
+}
+#rg_admin #header{
+	padding: 0 0 10px 0;
+}
+#rg_admin h3{
+	padding: 15px 0 0 0;
+}
+#rg_admin .rg_tooltip{
+	width: 80%;
+	display: none;
+
+	padding: 10px 15px;
+	margin: 10px 0;
+	font-size: 13px;
+	background: #f9f9f9;
+	background: rgba(255,255,255,0.8);
+	
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	border-radius: 8px;
+}
+#rg_admin .rg_more_info p{
+	font-size: 13px;
+}
+#rg_admin .rg_tooltip ul{
+	margin-top: 0;	
+	margin-bottom: 0;
+}
+#rg_admin .rg_tooltip li{
+	padding: 4px 0;
+}
+#rg_admin .rg_tooltip_link,
+#rg_admin .rg_external_link{
+	font-size: 13px;
+	margin-left: 10px;
+}
+#rg_admin hr{
+	border: none;
+	margin: 15px 0;
+	border-bottom: 1px solid #ccc;
+}
+/* Instagram btn */
+#rg_admin .rg_admin_btn{
+	display: block;
+	float: left;
+	clear: both;
+	padding: 0 21px 0 160px;
+	height: 47px;
+	line-height: 47px;
+
+	background: #386793 url('../img/small-logo.png') no-repeat 16px 11px;
+
+	color: #e9eef3;
+	text-decoration: none;
+
+	-moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+
+  -moz-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+#rg_admin .rg_admin_btn:hover{
+	background-color: #3880c4;
+	color: #fff;
+
+	-moz-transition: all 0.1s ease-in-out;
+  -webkit-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+}
+#rg_admin .rg_note{
+	font-size: 12px;
+	font-style: italic;
+	margin-left: 10px;
+}
+#rg_admin table.rg_shortcode_table{
+	border-collapse: collapse;
+}
+#rg_admin table.rg_shortcode_table th,
+#rg_admin table.rg_shortcode_table td{
+  border: 1px solid #999;
+  padding: 0.5rem;
+  text-align: left;
+}
+#rg_admin table.rg_shortcode_table th{
+	background: rgba(0,0,0,0.1);
+}
+#rg_admin table.rg_shortcode_table td{
+	background: rgba(255,255,255,0.5);
+}
+#rg_admin .rg_table_header{
+	background: #ddd;
+	font-weight: bold;
+}
+
+#rg_admin .rg_radio_label{
+	width: 70px;
+	padding-top: 5px;
+
+	display: -moz-inline-stack;
+	display: inline-block;
+	vertical-align: top;
+	zoom: 1;
+	*display: inline;
+}
+
+/* Config info */
+#rg_config{
+	float: left;
+	width: 100%;
+	clear: both;
+	margin: 10px 0 10px 0;
+}
+#rg_config_info{
+	float: left;
+	clear: both;
+	padding: 5px 15px;
+	margin: 10px 0 0 0;
+
+	background: #fff;
+	border: 1px solid #ddd;
+
+	-webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.07);
+	box-shadow: inset 0 1px 2px rgba(0,0,0,.07);
+
+	-moz-border-radius: 2px;
+  	-webkit-border-radius: 2px;
+  	border-radius: 2px;
+}
+
+
+/* Quick links */
+#rg_admin .rg_ig_contents_links{
+	float: left;
+	clear: both;
+	width: 100%;
+	padding-bottom: 12px;
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 15px;
+}
+#rg_admin .rg_ig_contents_links a,
+#rg_admin .rg_ig_contents_links span{
+	display: block;
+	float: left;
+	padding: 2px 5px;
+}
+#rg_admin .rg_ig_contents_links span{
+	padding-left: 0;
+}
+
+#rg_admin #rg_ig_width_options{
+	margin-top: 5px;
+	display: none;
+}
+#rg_admin #rg_ig_width_options label {
+	font-size: 13px;
+	position: relative;
+	top: -2px;
+}
+
+/* Shortcode labels */
+#rg_admin label{
+	position: relative;
+}
+#rg_admin th{
+	position: relative;
+}
+#rg_admin .rg_shortcode{
+	display: none;
+	position: absolute;
+	z-index: 10;
+	font-size: 11px;
+	float: left;
+	width: auto;
+	white-space: pre-line;
+	line-height: 1.4;
+}
+#rg_admin .rg_shortcode_symbol{
+	position: absolute;
+	right: -24px;
+	bottom: 0px;
+  padding: 2px 4px 3px 3px;
+	width: auto;
+	font-size: 11px;
+	margin-left: 5px;
+}
+
+
+/* Error notice */
+#rg_admin .rg_notice{
+	margin-top: 5px;
+	background: #f9ecda;
+	padding: 5px 10px;
+	border: 1px solid #e89a2e;
+	color: #cf6100;
+
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+#rg_admin .rg_notice a{
+	color: #d85600;
+}
+#rg_admin .rg_notice a:hover,
+#rg_admin .rg_notice a:focus{
+	color: #a34100;
+}
+#rg_admin .rg_notice p{
+	margin: 0;
+	padding: 5px 0;
+	font-size: 13px;
+}
+#rg_admin .rg_user_id_error{
+	display: none;
+
+	margin: 10px 0;
+	background: #F7E6E6;
+	padding: 5px 10px;
+	border: 1px solid #BA7B7B;
+	color: #592626;
+
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+
+/* Update notice */
+.rg_ig_notice{
+	position: relative;
+	clear: both;
+	width: 96%;
+	margin: 20px 0;
+	background: #F7E6E6;
+	padding: 15px 1.5%;
+	border: 1px solid #BA7B7B;
+	color: #592626;
+
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+.rg_ig_notice .rg_ig_notice_title{
+	font-size: 18px;
+	padding-bottom: 5px;
+}
+.rg_ig_notice p{
+	padding: 0;
+	margin: 0;
+	font-size: 14px;
+}
+.rg_ig_dismiss{
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	color: #dd3d36;
+	text-decoration: none;
+}
+
+/* Review notice */
+.rg_review_notice{
+    position: relative;
+    overflow: hidden;
+    max-width: 870px;
+    margin-top: 10px;
+    padding: 10px 10px 7px 10px;
+
+    background: #E6F0E8;
+    border: 1px solid #6AB074;
+    color: #214F28;
+}
+.rg_review_notice img{
+    width: 84px;
+    margin: 0 0 0 -100% !important;
+
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+}
+.rg_review_notice .ctf-notice-text{
+    float: left;
+    clear: none;
+    width: 100%;
+    padding: 4px 0;
+}
+.rg_review_notice p{
+    float: left;
+    clear: both;
+    width: auto;
+    margin: 0 0 0 100px !important;
+    padding: 4px 40px 4px 0;
+}
+.rg_review_notice a{
+    display: inline-block;
+    padding: 0 8px;
+    color: #178529;
+}
+.rg_review_notice a:hover,
+.rg_review_notice a:focus{
+    color: #0c7abf;
+}
+.rg_review_notice .links{
+    margin: 0 0 0 92px !important;
+    padding: 4px 0 0 0;
+}
+.rg_review_notice .links a:first-child{
+    /*padding-left: 0;*/
+}
+.rg_review_notice .rg_notice_close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    line-height: 1;
+}
+.rg_review_notice .rg_notice_close:hover,
+.rg_review_notice .rg_notice_close:focus{
+    color: #a34100;
+}
+

@@ -1,0 +1,424 @@
+/* Feed container */
+#rg_ig {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#rg_ig:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*********************/
+/*** STYLE OPTIONS ***/
+/*********************/
+#rg_ig.rg_ig_fixed_height{
+  overflow: hidden;
+  overflow-y: auto;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#rg_ig #rg_ig_images{
+  width: 100%;
+  float: left;
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Items */
+#rg_ig #rg_ig_images .rg_ig_item{
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: top;
+  zoom: 1;
+  *display: inline;
+
+  padding: inherit !important;
+  margin: 0 !important;
+  text-decoration: none;
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Cols */
+#rg_ig.rg_ig_col_1 #rg_ig_images .rg_ig_item{ width: 100%; }
+#rg_ig.rg_ig_col_2 #rg_ig_images .rg_ig_item{ width: 50%; }
+#rg_ig.rg_ig_col_3 #rg_ig_images .rg_ig_item{ width: 33.33%; }
+#rg_ig.rg_ig_col_4 #rg_ig_images .rg_ig_item{ width: 25%; }
+#rg_ig.rg_ig_col_5 #rg_ig_images .rg_ig_item{ width: 20%; }
+#rg_ig.rg_ig_col_6 #rg_ig_images .rg_ig_item{ width: 16.66%; }
+#rg_ig.rg_ig_col_7 #rg_ig_images .rg_ig_item{ width: 14.28%; }
+#rg_ig.rg_ig_col_8 #rg_ig_images .rg_ig_item{ width: 12.5%; }
+#rg_ig.rg_ig_col_9 #rg_ig_images .rg_ig_item{ width: 11.11%; }
+#rg_ig.rg_ig_col_10 #rg_ig_images .rg_ig_item{ width: 10%; }
+
+/* Disable mobile layout */
+#rg_ig.rg_ig_col_1.rg_ig_disable_mobile #rg_ig_images .rg_ig_item{ width: 100%; }
+#rg_ig.rg_ig_col_2.rg_ig_disable_mobile #rg_ig_images .rg_ig_item{ width: 50%; }
+#rg_ig.rg_ig_col_3.rg_ig_disable_mobile #rg_ig_images .rg_ig_item{ width: 33.33%; }
+#rg_ig.rg_ig_col_4.rg_ig_disable_mobile #rg_ig_images .rg_ig_item{ width: 25%; }
+#rg_ig.rg_ig_col_5.rg_ig_disable_mobile #rg_ig_images .rg_ig_item{ width: 20%; }
+#rg_ig.rg_ig_col_6.rg_ig_disable_mobile #rg_ig_images .rg_ig_item{ width: 16.66%; }
+#rg_ig.rg_ig_col_7.rg_ig_disable_mobile #rg_ig_images .rg_ig_item{ width: 14.28%; }
+#rg_ig.rg_ig_col_8.rg_ig_disable_mobile #rg_ig_images .rg_ig_item{ width: 12.5%; }
+#rg_ig.rg_ig_col_9.rg_ig_disable_mobile #rg_ig_images .rg_ig_item{ width: 11.11%; }
+#rg_ig.rg_ig_col_10.rg_ig_disable_mobile #rg_ig_images .rg_ig_item{ width: 10%; }
+
+/* Photos */
+#rg_ig .rg_ig_photo_wrap{
+  position: relative;
+}
+#rg_ig .rg_ig_photo{
+  display: block;
+  text-decoration: none;
+}
+#rg_ig .rg_ig_photo img{
+  width: 100%;
+  height: auto;
+}
+#rg_ig a,
+#rg_ig a:hover,
+#rg_ig a:focus,
+#rg_ig a:active{
+  outline: none;
+}
+#rg_ig img{
+  display: block;
+  padding: 0 !important;
+  margin: 0 !important;
+  max-width: 100% !important;
+  opacity: 1 !important;
+}
+#rg_ig .rg_ig_link{
+  display: none;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  width: 100%;
+  padding: 10px 0;
+  background: rgba(0,0,0,0.5);
+  text-align: center;
+  color: #fff;
+  font-size: 12px;
+  line-height: 1.1;
+}
+#rg_ig .rg_ig_link a{
+  padding: 0 6px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 12px;
+  line-height: 1.1;
+
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: top;
+  zoom: 1;
+  *display: inline;
+}
+#rg_ig .rg_ig_link .rg_ig_lightbox_link{
+  padding-bottom: 5px;
+}
+#rg_ig .rg_ig_link a:hover,
+#rg_ig .rg_ig_link a:focus{
+  text-decoration: underline;
+}
+#rg_ig .rg_ig_photo_wrap:hover .rg_ig_link,
+#rg_ig .rg_ig_photo_wrap:focus .rg_ig_link{
+  display: block;
+}
+
+/* Videos */
+#rg_ig .rg_ig_type_video .rg_ig_playbtn{
+  display: block !important;
+  position: absolute;
+  z-index: 0;
+  top: 50%;
+  left: 50%;
+  margin-top: -24px;
+  margin-left: -19px;
+  padding: 0;
+  font-size: 48px;
+  color: #fff;
+  color: rgba(255,255,255,0.9);
+  font-style: normal !important;
+  text-shadow: 0 0 8px rgba(0,0,0,0.8);
+}
+
+/* Loader */
+#rg_ig .rg_ig_loader{
+  position: relative;
+  left: 50%;
+  width: 16px;
+  height: 16px;
+  margin: 10px 0 10px -8px;
+  background: url('../img/loader.png') no-repeat;
+}
+
+/* HEADER */
+#rg_ig .rg_ig_header{
+  float: left;
+  clear: both;
+  margin: 0 0 15px 0;
+  padding: 0;
+  line-height: 1.2;
+  width: 100%;
+}
+#rg_ig .rg_ig_header a{
+  float: left;
+  display: block;
+  /*width: 100%;*/
+  min-width: 100%\9;
+}
+/* Header profile pic */
+#rg_ig .rg_ig_header_img{
+  float: left;
+  position: relative;
+  width: 50px;
+  margin: 0 0 0 -100% !important;
+  overflow: hidden;
+
+  -moz-border-radius: 40px;
+  -webkit-border-radius: 40px;
+  border-radius: 40px;
+}
+#rg_ig .rg_ig_header_img img{
+  float: left;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: none !important;
+
+  -moz-border-radius: 40px;
+  -webkit-border-radius: 40px;
+  border-radius: 40px;
+}
+/* Profile pic hover */
+#rg_ig .rg_ig_header_img_hover{
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  color: #fff;
+  background: rgba(0,0,0,0.75);
+
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  -moz-opacity: 0;
+  -khtml-opacity: 0;
+  opacity: 0;
+  border-radius: 40px;
+  transition: opacity 0.2s;
+}
+/* Fade the Instagram icon in when hovering on the header */
+#rg_ig .rg_ig_header a:hover .rg_ig_header_img_hover,
+#rg_ig .rg_ig_header a:focus .rg_ig_header_img_hover{
+  opacity: 1;
+}
+#rg_ig .rg_ig_header_img_hover i{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -12px;
+  margin-left: -12px;
+  width: 24px;
+  height: 24px;
+  overflow: hidden;
+  background: url('../img/small-logo.png') no-repeat 0 0;
+}
+/* Header text */
+#rg_ig .rg_ig_header_text{
+  float: left;
+  width: 100%;
+  padding-top: 5px;
+}
+#rg_ig .rg_ig_header a{
+  text-decoration: none;
+}
+#rg_ig .rg_ig_header_text .rg_ig_bio,
+#rg_ig .rg_ig_header_text h3{
+  float: left;
+  clear: both;
+  width: auto;
+  margin: 0 0 0 60px !important;
+  padding: 0 !important;
+}
+#rg_ig .rg_ig_header h3{
+  font-size: 16px;
+  line-height: 1.3;
+}
+#rg_ig .rg_ig_header p{
+  font-size: 13px;
+  line-height: 1.3;
+}
+#rg_ig .rg_ig_header h3.rg_ig_no_bio{
+  padding-top: 9px !important;
+}
+#rg_ig .rg_ig_header_text img.emoji{
+  margin-right: 3px !important;
+}
+
+
+/* Buttons */
+#rg_ig #rg_ig_load{
+  float: left;
+  clear: both;
+  width: 100%;
+  text-align: center;
+}
+#rg_ig #rg_ig_load .rg_ig_load_btn,
+#rg_ig .rg_ig_follow_btn a{
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: top;
+  zoom: 1;
+  *display: inline;
+
+  padding: 7px 14px;
+  margin: 5px auto 0 auto;
+  background: #333;
+  color: #eee;
+  border: none;
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+  line-height: 1.5;
+
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* Follow button */
+#rg_ig .rg_ig_follow_btn{
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: top;
+  zoom: 1;
+  *display: inline;
+  text-align: center;
+}
+#rg_ig .rg_ig_follow_btn.rg_ig_top{
+  display: block;
+  margin-bottom: 5px;
+}
+#rg_ig .rg_ig_follow_btn a{
+  background: #517fa4;
+  color: #fff;
+}
+#rg_ig .rg_ig_follow_btn a:hover,
+#rg_ig .rg_ig_follow_btn a:focus,
+#rg_ig #rg_ig_load .rg_ig_load_btn:hover,
+#rg_ig #rg_ig_load .rg_ig_load_btn:focus{
+  filter: alpha(opacity=85);
+  opacity: 0.85;
+}
+#rg_ig #rg_ig_load .fa,
+#rg_ig .rg_ig_follow_btn .fa{
+  margin-bottom: -1px;
+  margin-right: 7px;
+  font-size: 15px;
+}
+#rg_ig #rg_ig_load .rg_ig_follow_btn{
+  margin-left: 5px;
+}
+
+/* Error messages */
+#rg_ig .rg_ig_error{
+  width: 100%;
+  text-align: center;
+}
+
+/* Mod only error msgs */
+#rg_ig_mod_error{
+  display: none;
+  border: 1px solid #ddd;
+  background: #eee;
+  color: #333;
+  margin: 0;
+  padding: 10px 15px;
+  font-size: 13px;
+  text-align: center;
+
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}
+#rg_ig_mod_error p{
+  padding: 5px 0 !important;
+  margin: 0 !important;
+  line-height: 1.3 !important;
+}
+#rg_ig_mod_error ol,
+#rg_ig_mod_error ul{
+  padding: 5px 0 5px 20px !important;
+  margin: 0 !important;
+}
+#rg_ig_mod_error li{
+  padding: 1px 0 !important;
+  margin: 0 !important;
+}
+#rg_ig_mod_error span{
+  font-size: 12px;
+}
+
+/* Medium */
+#rg_ig.rg_ig_medium .rg_ig_playbtn{
+  font-size: 23px;
+  margin-top: -12px;
+  margin-left: -9px;
+}
+/* Small */
+#rg_ig.rg_ig_small .rg_ig_playbtn{
+  font-size: 18px;
+  margin-top: -9px;
+  margin-left: -7px;
+}
+
+/* Media queries */
+@media all and (max-width: 640px){
+  /* Make 3-6 cols into 2 col */
+  #rg_ig.rg_ig_col_3 #rg_ig_images .rg_ig_item,
+  #rg_ig.rg_ig_col_4 #rg_ig_images .rg_ig_item,
+  #rg_ig.rg_ig_col_5 #rg_ig_images .rg_ig_item,
+  #rg_ig.rg_ig_col_6 #rg_ig_images .rg_ig_item{
+    width: 50%;
+  }
+  /* Make 7-10 cols into 4 col */
+  #rg_ig.rg_ig_col_7 #rg_ig_images .rg_ig_item,
+  #rg_ig.rg_ig_col_8 #rg_ig_images .rg_ig_item,
+  #rg_ig.rg_ig_col_9 #rg_ig_images .rg_ig_item,
+  #rg_ig.rg_ig_col_10 #rg_ig_images .rg_ig_item{
+    width: 25%;
+  }
+  /* On mobile make the min-width 100% */
+  #rg_ig.rg_ig_width_resp{
+    width: 100% !important;
+  }
+}
+@media all and (max-width: 480px){
+  /* Make all cols into 1 col */
+  #rg_ig.rg_ig_col_3 #rg_ig_images .rg_ig_item,
+  #rg_ig.rg_ig_col_4 #rg_ig_images .rg_ig_item,
+  #rg_ig.rg_ig_col_5 #rg_ig_images .rg_ig_item,
+  #rg_ig.rg_ig_col_6 #rg_ig_images .rg_ig_item,
+  #rg_ig.rg_ig_col_7 #rg_ig_images .rg_ig_item,
+  #rg_ig.rg_ig_col_8 #rg_ig_images .rg_ig_item,
+  #rg_ig.rg_ig_col_9 #rg_ig_images .rg_ig_item,
+  #rg_ig.rg_ig_col_10 #rg_ig_images .rg_ig_item{
+    width: 100%;
+  }
+}
